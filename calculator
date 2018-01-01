@@ -1,0 +1,31 @@
+#Returnes the sum of num1 and num2
+def add(num1, num2):
+	return num1 + num2
+#Returns the difference of sub1 and sub2
+def subtract(sub1, sub2):
+	return sub1 - sub2
+#Returns the product of mul1 and mul2
+def multipy(mul1, mul2):
+	return mul1 * mul2
+#Returns the quotient of div1 and div2
+def divide(div1, div2):
+	return div1 / div2
+
+def main():
+	operation = input("What do you want to do (+, -, *, /): ")
+	if(operation != '+' and  operation != '-' and operation != '*' and operation != '/'):
+		#invalid operation
+		print("you must enter a valid operation")
+	else:
+		num1 = int(input("Enter a number: "))
+		num2 = int(input("Enter another number: "))
+		if(operation == '+'):
+			print(add(num1, num2))
+		elif(operation == '-'):
+			print(subtract(num1, num2))
+		elif(operation == '*'):
+			print(multipy(num1, num2))
+		elif(operation == '/'):
+			print(divide(num1, num2))
+			
+main()
